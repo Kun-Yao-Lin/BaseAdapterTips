@@ -8,10 +8,10 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
-import tw.com.arnold_lin.tips.mix.adapters.core.FeatureViewFactory;
-import tw.com.arnold_lin.tips.mix.adapters.views.BannerView;
-import tw.com.arnold_lin.tips.mix.adapters.views.DateMsgView;
-import tw.com.arnold_lin.tips.mix.adapters.views.UnvImageView;
+import tw.com.arnold_lin.library.adapters.feature.core.FeatureViewFactory;
+import tw.com.arnold_lin.tips.mix.views.BannerView;
+import tw.com.arnold_lin.tips.mix.views.DateMsgView;
+import tw.com.arnold_lin.tips.mix.views.UnvImageView;
 
 /**
  * Created by arnold_lin on 2015/12/11.

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import tw.com.arnold_lin.tips.basic.ColorAdapter;
-import tw.com.arnold_lin.tips.wrappers.adapters.asymmetric.AsymmetricAdapter;
+import tw.com.arnold_lin.library.adapters.wrappers.asymmetric.AsymmetricAdapter;
 
 public class AsymmetricAdapterActivity extends Activity {
 

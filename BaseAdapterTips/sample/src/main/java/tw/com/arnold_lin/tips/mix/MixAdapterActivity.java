@@ -7,12 +7,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
+import tw.com.arnold_lin.library.adapters.feature.FeatureAdapter;
+import tw.com.arnold_lin.library.adapters.feature.binders.Binder;
 import tw.com.arnold_lin.tips.BasicAdapterActivity;
-import tw.com.arnold_lin.tips.mix.adapters.FeatureAdapter;
-import tw.com.arnold_lin.tips.mix.adapters.binders.Binder;
-import tw.com.arnold_lin.tips.mix.adapters.views.BannerView;
-import tw.com.arnold_lin.tips.mix.adapters.views.DateMsgView;
-import tw.com.arnold_lin.tips.mix.adapters.views.UnvImageView;
+import tw.com.arnold_lin.tips.mix.views.BannerView;
+import tw.com.arnold_lin.tips.mix.views.DateMsgView;
+import tw.com.arnold_lin.tips.mix.views.UnvImageView;
+
 
 public class MixAdapterActivity extends BasicAdapterActivity<Binder> {
 

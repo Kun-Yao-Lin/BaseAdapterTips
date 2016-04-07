@@ -8,12 +8,13 @@ import android.widget.BaseAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import tw.com.arnold_lin.tips.mix.adapters.BinderImp;
+import tw.com.arnold_lin.library.adapters.interfaces.IBinder;
+
 
 /**
  * Created by arnold_lin on 2015/11/20.
  */
-public class ColorAdapter extends BaseAdapter implements BinderImp<Integer> {
+public class ColorAdapter extends BaseAdapter implements IBinder<Integer> {
     private final Context context;
     private final List<Integer> colors = new ArrayList<>();
 
@@ -86,4 +87,12 @@ public class ColorAdapter extends BaseAdapter implements BinderImp<Integer> {
         notifyDataSetChanged();
     }
 
+    @Override
+    public void setBinder(int pos, Integer binders) {
+        if(binders == null){
+            return;
+        }
+        this.colors.set(pos, binders);
+        notifyDataSetChanged();
+    }
 }

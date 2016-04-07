@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import tw.com.arnold_lin.tips.basic.ColorAdapter;
-import tw.com.arnold_lin.tips.wrappers.adapters.asymmetric.AsymmetricAdapter;
-import tw.com.arnold_lin.tips.wrappers.adapters.limitless.LimitLessListAdapter;
+import tw.com.arnold_lin.library.adapters.wrappers.asymmetric.AsymmetricAdapter;
+import tw.com.arnold_lin.library.adapters.wrappers.limitless.LimitLessListAdapter;
 
 public class AsymmetricLimitLessAdapterActivity extends Activity {
 

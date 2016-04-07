@@ -2,6 +2,7 @@ package tw.com.arnold_lin.tips;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import tw.com.arnold_lin.tips.mix.adapters.BinderImp;
+import tw.com.arnold_lin.library.adapters.interfaces.IBinder;
+
 
 /**
  * Created by arnold_lin on 2015/12/18.
@@ -28,11 +30,14 @@ public abstract class BasicAdapterActivity<T> extends Activity implements View.O
     private Button button;
 
     private BaseAdapter adapter;
-    private BinderImp imp;
+    private IBinder imp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(Build.VERSION.SDK_INT >= 11){
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
+        }
         linearLayout = new LinearLayout(this);
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         linearLayout.setOrientation(LinearLayout.VERTICAL);
@@ -52,8 +57,8 @@ public abstract class BasicAdapterActivity<T> extends Activity implements View.O
         listView.setAdapter(adapter);
 
         //初始化
-        if(adapter instanceof BinderImp){
-            imp =  ((BinderImp) adapter);
+        if(adapter instanceof IBinder){
+            imp =  ((IBinder) adapter);
             imp.setBinders(getInitData());
         }
     }
