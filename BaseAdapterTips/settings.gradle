@@ -1,1 +1,1 @@
-include ':sample', ':library'
+include ':sample', ':library', ':Android-SlideExpandableListView', ':deckview', ':test'

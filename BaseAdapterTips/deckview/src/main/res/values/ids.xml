@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="task_view_content" />
+    <item type="id" name="task_view_bar" />
+    <item type="id" name="task_view_thumbnail" />
+    <item type="id" name="application_icon" />
+    <item type="id" name="activity_description" />
+    <item type="id" name="dismiss_task" />
+</resources>

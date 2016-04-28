@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="tw.com.arnold_lin.tips">
+    package="tw.com.arnold_lin.tips"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +12,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:name=".TipsApplication"
-        android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme.NoActionBar"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        tools:overrideLibrary="com.appeaser.deckview">
         <activity
             android:name=".SampleSelectActivity"
             android:label="@string/app_name">
@@ -22,7 +25,7 @@
         </activity>
 
         <activity
-            android:name=".basic.NormalAdapterActivity"
+            android:name=".recycleview.basic.NormalAdapterActivity"
             android:label="@string/basic">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +35,7 @@
 
         <!--mix-->
         <activity
-            android:name=".mix.MixAdapterActivity"
+            android:name=".recycleview.mix.MixAdapterActivity"
             android:label="@string/mix">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,7 +45,7 @@
 
         <!--wrapper-->
         <activity
-            android:name=".wrappers.LimitLessAdapterActivity"
+            android:name=".recycleview.wrappers.LimitLessAdapterActivity"
             android:label="@string/wrapper_limitless">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,7 +54,7 @@
         </activity>
 
         <activity
-            android:name=".wrappers.AsymmetricAdapterActivity"
+            android:name=".recycleview.wrappers.AsymmetricAdapterActivity"
             android:label="@string/wrapper_asymmetric">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,8 +63,27 @@
         </activity>
 
         <activity
-            android:name=".wrappers.AsymmetricLimitLessAdapterActivity"
+            android:name=".recycleview.wrappers.CircularAdapterActivity"
+            android:label="@string/wrapper_recipe">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="tw.com.arnold_lin.tips.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".recycleview.wrappers.AsymmetricLimitLessAdapterActivity"
             android:label="@string/wrapper_asymmetric_limitless">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="tw.com.arnold_lin.tips.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".recycleview.wrappers.DeckViewAdapterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/wrapper_deck">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="tw.com.arnold_lin.tips.sample" />

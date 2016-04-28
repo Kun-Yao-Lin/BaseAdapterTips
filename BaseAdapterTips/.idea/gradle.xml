@@ -8,15 +8,21 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Android-SlideExpandableListView" />
+            <option value="$PROJECT_DIR$/deckview" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/sample" />
+            <option value="$PROJECT_DIR$/test" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Android-SlideExpandableListView" />
+            <option value="$PROJECT_DIR$/deckview" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/sample" />
+            <option value="$PROJECT_DIR$/test" />
           </set>
         </option>
       </GradleProjectSettings>

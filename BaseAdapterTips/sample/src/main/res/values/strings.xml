@@ -7,8 +7,13 @@
     <string name="basic">基礎</string>
     <string name="mix">混合</string>
 
+
+    <string name="wrapper_recipe">擴充 - 循環滾動</string>
     <string name="wrapper_limitless">擴充 - 無限滾動</string>
     <string name="wrapper_asymmetric">擴充 - 非對稱</string>
+    <string name="wrapper_deck">擴充 - 甲板</string>
     <string name="wrapper_asymmetric_limitless">擴充 - 非對稱 + 無限滾動</string>
 
+    <string name="test1">測試1</string>
+    <string name="test2">測試2</string>
 </resources>

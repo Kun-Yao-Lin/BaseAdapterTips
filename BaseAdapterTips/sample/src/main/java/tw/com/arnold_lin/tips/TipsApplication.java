@@ -8,10 +8,10 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
-import tw.com.arnold_lin.library.adapters.feature.core.FeatureViewFactory;
-import tw.com.arnold_lin.tips.mix.views.BannerView;
-import tw.com.arnold_lin.tips.mix.views.DateMsgView;
-import tw.com.arnold_lin.tips.mix.views.UnvImageView;
+import tw.com.arnold_lin.library.adapters.common.feature.core.FeatureViewFactory;
+import tw.com.arnold_lin.tips.common.views.BannerView;
+import tw.com.arnold_lin.tips.common.views.DateMsgView;
+import tw.com.arnold_lin.tips.common.views.UnvImageView;
 
 /**
  * Created by arnold_lin on 2015/12/11.
@@ -35,9 +35,10 @@ public class TipsApplication extends Application {
         initialize();
 
         //把需要的畫面註冊
-        FeatureViewFactory.register(new DateMsgView.Type());
-        FeatureViewFactory.register(new BannerView.Type());
-        FeatureViewFactory.register(new UnvImageView.Type());
+        FeatureViewFactory.register(
+                new DateMsgView.Type(),
+                new BannerView.Type(),
+                new UnvImageView.Type());
     }
 
     private void initialize(){
